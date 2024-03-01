@@ -9,4 +9,9 @@
 .name{
     padding-right:50px;
 }
-<!--An-->
+
+th, tr{
+    background-color: aquamarine;
+    border: 2px, black, solid;
+}
+/* <!--An--> */
