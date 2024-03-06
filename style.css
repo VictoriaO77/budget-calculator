@@ -1,58 +1,75 @@
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-.career{
+
+[role="center"]{
+    text-align: center;
+    margin-bottom: 3%;
+}
+
+.career {
     margin-bottom: 80px;
 }
-.name{
-    padding-right:50px;
+
+.name {
+    padding-right: 50px;
 }
 
-th, tr{
-    background-color:#F4F4F4;
+th,
+tr {
+    background-color: #F4F4F4;
     border: 2px, black, solid;
 }
+
 /* <!--An--> */
 
-.header {
-    /* background-image: ; the background image should be added here.     */
-    width: 100%;
-    height: 25%;
-}
-.header > p {
-    margin: 8%;
-    padding: 2%;
+.headingText {
     background-color: #484D7F;
     color: #FFFFFF;
+    margin: 5%;
+    padding: 5%;
 }
+
+header {
+    display: flex;
+    align-items: center;
+    max-width: 100%;
+    height: 40rem;
+    background-image: url(/images/headingImage.jpg);
+}
+
 .row {
     display: flex;
 }
-.column { 
+
+.column {
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
     width: 50%;
     padding-bottom: 10%;
 }
-.left {
 
-}
+.left {}
+
 .right {
-background-color: #F4F4F4;
+    background-color: #F4F4F4;
 }
+
 .columnbottom {
     display: flex;
     flex-flow: column wrap;
     align-items: flex-start;
-    margin-left: 5%;   
+    margin-left: 5%;
 }
+
 footer {
     background-color: #484D7F;
     color: white;
 }
+
 .classcheckbookheader {
     padding-bottom: 10%;
 }
@@ -66,3 +83,23 @@ footer {
     padding: 40px;
 }
 
+img {
+    margin: 5%;
+    max-width: 100%;
+    width: 50%;
+}
+
+.sec {
+    margin: 5%;
+}
+
+.sec > li{
+    margin: 5%;
+}
+
+#monthlyIncome {
+    margin: 1%;
+    background-color: #E9E9E9;
+    width: 15rem;
+    height: 2rem;
+}
