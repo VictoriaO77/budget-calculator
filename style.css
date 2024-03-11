@@ -1,6 +1,6 @@
 * {
     box-sizing: border-box;
-    margin: 0;
+    /* margin: 0; */
     padding: 0;
 }
 
@@ -17,11 +17,6 @@
     padding-right: 50px;
 }
 
-th,
-tr {
-    background-color: #F4F4F4;
-    border: 2px, black, solid;
-}
 
 /* <!--An--> */
 
@@ -35,7 +30,6 @@ tr {
 header {
     display: flex;
     align-items: center;
-    max-width: 100%;
     height: 40rem;
     background-image: url(/images/headingImage.jpg);
 }
@@ -49,20 +43,61 @@ header {
     flex-flow: column nowrap;
     align-items: center;
     width: 50%;
-    padding-bottom: 10%;
+    padding-bottom: 5%;
 }
 
-.left {}
+.left {
+    background-color: #FFFFFF;
+}
 
 .right {
     background-color: #F4F4F4;
 }
 
-.columnbottom {
+.rowbottom {
     display: flex;
     flex-flow: column wrap;
     align-items: flex-start;
+    justify-content: space-between;
     margin-left: 5%;
+    width: 100%;
+}
+
+.rowbottom #num {
+    color: #000AFF;
+    margin-top: 55px;
+    margin-bottom: 10px;
+}
+
+.checkbookSteps {
+    background-color: #484D7F;
+    color: #FFFFFF;
+    padding: 10px;
+    margin-top:55px;
+}
+
+.AD {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-around;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+.tbl td {
+    border: solid black 1px;
+    padding: 1px 20px;
+}
+
+.fee {
+    color: red;
+}
+
+.dep {
+    color: #11CE00;
 }
 
 footer {
@@ -77,6 +112,7 @@ footer {
 .budgetcalc {
     padding-top: 80px;
     padding-bottom: 80px;
+    width: 50%;
 }
 
 footer {
@@ -102,4 +138,82 @@ img {
     background-color: #E9E9E9;
     width: 15rem;
     height: 2rem;
+}
+
+.taxes table{
+    display: flex;
+    height: 15rem;
+    /* border: red solid 1px; */
+}
+
+.taxes tr {
+    display: flex;
+    border-top: 1px solid black;
+    height: 2rem;
+    margin-top: .5rem;
+    justify-content: flex-start;
+    align-items: flex-start;
+    font-size: large;
+}
+
+.totalDeductions {
+    margin: 3rem 0 0 0;
+}
+
+#number {
+    margin: 1%;
+    background-color: #E9E9E9;
+    width: 15rem;
+    height: 2rem;
+}
+
+#button {
+    background-color: #FFCD4B;
+    border-style: none;
+    padding: 5px 3rem;
+    margin-top: 20px;
+}
+
+#btn {
+    background-color: #FFCD4B;
+    border-style: none;
+    padding: 5px 3rem;
+    display: flex;
+    align-self: flex-end;
+    margin-right: 18.5rem;
+    margin-top: 5rem;
+}
+
+#text {
+    margin: 1%;
+    background-color: #E9E9E9;
+    color: #9A9A9A;
+    width: 60rem;
+    height: 2rem;
+    border-style: none;
+}
+
+#textbox {
+    border-style: none;
+}
+
+.pie {
+    width: 400px;
+    height: 400px;
+    background-image: conic-gradient(#484D7F 20%, black 50%, black 50%, #FFCD4B 20%);
+    border-radius: 50%;
+    border: solid black;
+    
+}
+
+div .pie{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.budgetcalc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
 }

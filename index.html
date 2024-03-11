@@ -131,15 +131,21 @@
                 <form>
                     <section>
                         <div>
-                            <label><h3>Career Options:</h3></label>
+                            <label>
+                                <h3>Career Options:</h3>
+                            </label>
                             <input type="text" id="monthlyIncome">
                         </div>
                         <div>
-                            <label><h3>Gross Annual Income:</h3></label>
+                            <label>
+                                <h3>Gross Annual Income:</h3>
+                            </label>
                             <input type="text" id="monthlyIncome">
                         </div>
                         <div>
-                            <label><h3>Gross Monthly Income:</h3></label>
+                            <label>
+                                <h3>Gross Monthly Income:</h3>
+                            </label>
                             <input type="text" id="monthlyIncome">
                         </div>
                     </section>
@@ -149,52 +155,45 @@
                 </form>
             </section>
 
-            <section class="column right">
+            <section class="column right taxes">
                 <h2>Pay Period Deductions</h2>
 
                 <table>
 
                     <tr>
                         <th>Federal Taxes</th>
-                        <td> 12% x 0.12</td>
-                        <td>$632.47</td>
+                        <td> 12% x 0.12 = <input id="textbox" type="text" placeholder=""></td>
                     </tr>
 
                     <tr>
                         <th>State Taxes</th>
-                        <td> 7% x 0.07</td>
-                        <td>$368.94</td>
+                        <td> 7% x 0.07 = <input id="textbox" type="text" placeholder=""></td>
                     </tr>
 
                     <tr>
                         <th>Social Security</th>
-                        <td> 6.2% x 0.062</td>
-                        <td>$326.78</td>
+                        <td> 6.2% x 0.062 = <input id="textbox" type="text" placeholder=""></td>
                     </tr>
 
                     <tr>
                         <th>Medicare</th>
-                        <td>1.45% x 0.0145</td>
-                        <td>$76.42</td>
+                        <td>1.45% x 0.0145 = <input id="textbox" type="text" placeholder=""></td>
                     </tr>
 
                     <tr>
                         <th> Disability</th>
-                        <td>1% x 0.01</td>
-                        <td>$52.71</td>
+                        <td>1% x 0.01 = <input id="textbox" type="text" placeholder=""></td>
                     </tr>
 
                     <tr>
                         <th>Retirement
-                                Investment</th>
-                        <td>5% x 0.05</td>
-                        <td>$263.53</td>
+                            Investment</th>
+                        <td>5% x 0.05 = <input id="textbox" type="text" placeholder=""></td>
                     </tr>
 
                     <tr>
                         <th>Medical Insurance</th>
-                        <td>$180.00</td>
-                        <td> $180.00</td>
+                        <td>$180.00 = $180.00</td>
                     </tr>
 
                 </table>
@@ -202,7 +201,7 @@
                 <h2 class="totalDeductions">Total Deductions</h2>
 
                 <section>
-                    <h2> 0-0=0</h2>
+                    <input id="textbox" type="text" placeholder="">
                 </section>
 
                 <section>
@@ -214,48 +213,64 @@
         </section>
 
 
-        <section class="columnbottom">
+        <section class="rowbottom">
             <section class="checkbookheader">
                 <h2>Balancing a Checkbook</h2>
-                <h2>When it comes to figuring out finaces, using a check register is quick and easy to fill out. The
-                    four major components include; the date, description, payment/deposit, and the balance.</h2>
+                <p>When it comes to figuring out finaces, using a check register is quick and easy to fill out. The
+                    four major components include; the date, description, payment/deposit, and the balance.</p>
             </section>
-            <section>
+            <section class="checkbookSteps">
                 Date: Enter the current date of the transaction<br><br>
                 Description: Enter the name of the name or description of the transaction<br><br>
                 Payment column(-) or Deposit column(+).<br><br>
                 Balence: Either subtract (if payment) or add (if deposit)to the<br>
                 previous balance.
             </section>
-            <h3>AD - Automatic Deposit|*|DC-Debit|*|FT-Funds Transfer|*|Sc-Service Charge|*|TD-Tax Deductible</h3>
+
+            <section class="AD">
+                <p id="num">AD - Automatic Deposit|*|DC-Debit|*|FT-Funds Transfer|*|Sc-Service Charge|*|TD-Tax
+                    Deductible</p>
+
+                <table class="tbl">
+                    <tr>
+                        <td>Number or Code</td>
+                        <td>Date</td>
+                        <td>Transaction Description</td>
+                        <td class="fee">Payment Fee <br> Withdrawal(-)</td>
+                        <td class="dep">Deposit/Credit(+)</td>
+                        <td>$ Balance</td>
+                    </tr>
+                    <tr>
+                        <td><input id="textbox" type="text" placeholder=""></td>
+                        <td><input id="textbox" type="text" placeholder=""></td>
+                        <td><input id="textbox" type="text" placeholder=""></td>
+                        <td><input id="textbox" type="text" placeholder=""></td>
+                        <td><input id="textbox" type="text" placeholder=""></td>
+                        <td><input id="textbox" type="text" placeholder=""></td>
+                    </tr>
+                </table>
+            </section>
+
+            <button input="button" id="button">ADD</button>
 
             <section>
-                <table>
-                    <tr>Number or Code</tr>
-                    <td></td>
-                    <tr>Date
-                    <tr>
-                        <td></td>
-                    <tr>Transaction Description</tr>
-                    <td></td>
-                    <tr>Payment Fee <br> Withdrawal(-)</tr>
-                    <td></td>
-                    <tr>Deposit/Credit(+)</tr>
-                    <td></td>
-                    <tr>$ Balance</tr>
-                    <td></td>
-                </table>
-                <button>ADD</button>
+                <input id="text" type="text" placeholder="TYPE NET MONTHLY INCOME">
+                <button input="button" id="btn">CALCULATE</button>
             </section>
+
             <section class="budgetcalc">
                 <h2>Necessities:</h2>
-                <p>$<input type="number" placeholder="----"></p>
+                <p>$<input id="number" type="number" placeholder="----"></p>
                 <h2>Wants:</h2>
-                <p>$<input type="number" placeholder="----">
+                <p>$<input id="number" type="number" placeholder="----">
                 <h2>Savings:</h2>
-                <p>$<input type="number" placeholder="----">
+                <p>$<input id="number" type="number" placeholder="----">
+                <div class="pie"></div>
             </section>
         </section>
+
+
+
     </main>
     <footer>
         <p>Copyright 2024 Victoria Orona</p>
